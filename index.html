@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zee Studio</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<style>
+    
+*,
+*:before,
+*:after{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+    margin: 0px;
+    padding: 0px;
+    background-image: url(bgimg17.jpg);
+    color: white;
+    background-size: cover;
+}
+
+
+
+.left{
+    /* border: 2px solid white; */
+    display: inline-block;
+    position: absolute;
+    top: 22px;
+    font-size: 20px;
+
+}
+
+/* .mid{
+    display: block;
+    width: 33%;
+    margin: 20px auto;
+    border: 2px solid red;
+} */
+
+.right{
+    /* border: 2px solid yellow; */
+    position: absolute;
+    right: 34px;
+    top: 22px;
+    display: inline-block;
+    
+}
+
+
+h1{
+    padding: 30px;
+    margin-top: 18%;
+    margin-left: 10%;
+    font-size: 57px;
+    font-weight: 900;
+    border: none;
+    margin-bottom: 0%;
+    
+}
+
+
+
+h6{
+    padding: 10px;
+    font-size: 24px;
+    margin-left: 11%;
+    border: none;
+    margin-top: 0%;
+    margin-bottom: 35px;
+    color: rgb(197, 194, 194);
+}
+
+p{
+    padding: 20px;
+    margin-left: 836px;
+    margin-top: 350px;
+    margin-right: 873px;
+}
+
+button{
+    background: black;
+    border: 0.9px solid white;
+    border-radius: 30px;
+    color: white;
+    padding: 13px;
+    margin-left: 11.5%;
+    
+    
+}
+
+button:hover{
+    background: white;
+    color: black;
+    box-shadow: 0px 5px 15px 0px grey;
+    
+}
+
+/* this one is for toggels of navbar */
+
+nav{
+    height: 8vh;
+    width: 55vw;
+   margin-top: 22px;
+}
+
+a{
+    position: relative;
+    text-decoration: none;
+    font-family: sans-serif;
+    color: rgb(190, 190, 190);
+    letter-spacing: 0.5px;
+    font-size: 18px;
+    padding: 0 10px;
+    margin-left: 60px;
+    font-weight: 500;
+}
+
+a:after{
+    content: "";
+    position: absolute;
+    background-color: white;
+    height: 3px;
+    width: 0;
+    left: 0;
+    bottom: -10px;
+    transition: 0.3s;
+}
+
+a:hover{
+    color: #ffff;
+}
+
+a:hover:after{
+    width: 100%;
+}
+
+.home{
+    margin-right: 190px;
+    color: white;
+    font-size: 34px;
+    
+}
+
+
+
+</style>
+
+<body>
+    <header class="navbar">
+        <div class="left">
+            <nav>
+                <div class="toggle">
+                    <a class="home" href="index.html">Home</a>
+                    <a class="portfolio" href="portfolio.html">Portfolio</a>
+                    <a class="album" href="album.html">Albums</a>
+                    <a class="about" href="about.html">About</a>
+                    <a class="contact" href="contact.html">Contact</a>
+                    
+                </div>
+            </nav>
+        </div>
+
+        <!-- <div class="mid">
+            
+        </div> -->
+
+        <div class="right">
+            <a href="#"><img src="insta.png" class="insta"  style="width:55px; "  ></a>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="title-name">
+            <h1>Zee Digital Photo Studio</h1>
+            <h6>Capturing the Beauty of your Everydays Life</h6>
+            <button type="button" onclick="location.href='contact.html'">Book Your Shoot Now</button>
+            <p>Copyright © ZeeStudio</p>
+
+        </div>
+    </div>
+
+    
+</body>
+
+
+
+
+</html>

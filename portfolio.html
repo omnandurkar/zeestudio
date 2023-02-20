@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zee Studio</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<style>
+
+*,
+*:before,
+*:after{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0px;
+    padding: 0px;
+    background-image: url(bgimg2.jpg);
+    color: white;
+    background-size: cover;
+}
+
+.left{
+    /* border: 2px solid white; */
+    display: inline-block;
+    position: absolute;
+    top: 22px;
+    font-size: 20px;
+
+}
+
+.right{
+    /* border: 2px solid yellow; */
+    position: absolute;
+    right: 34px;
+    top: 22px;
+    display: inline-block;
+    
+}
+
+nav{
+    height: 8vh;
+    width: 55vw;
+   margin-top: 22px;
+}
+
+a{
+    position: relative;
+    text-decoration: none;
+    font-family: sans-serif;
+    color: rgb(190, 190, 190);
+    letter-spacing: 0.5px;
+    font-size: 18px;
+    padding: 0 10px;
+    margin-left: 60px;
+    font-weight: 500;
+}
+
+a:after{
+    content: "";
+    position: absolute;
+    background-color: white;
+    height: 3px;
+    width: 0;
+    left: 0;
+    bottom: -10px;
+    transition: 0.3s;
+}
+
+a:hover{
+    color: #ffff;
+}
+
+a:hover:after{
+    width: 100%;
+}
+
+.portfolio{
+    margin-right: 190px;
+    color: white;
+    font-size: 34px;
+}
+
+/* h3{
+    text-align: center;
+    margin-top: 50%;
+    font-weight: lighter;
+    margin-right: 1%;
+    font-size: 16px;
+} */
+
+.card{
+    float: left;
+    width: 29.33%;
+    padding: 39px;
+    
+}
+
+.card-group{
+    margin-top: 2%;
+    margin-left: 8%;
+}
+
+.recent-work{
+    font-weight: 500;
+    font-family: sans-serif;
+    text-align: center;
+    font-size: 45px;
+    padding: 10px;
+    margin-top: 193px;
+}
+
+/* .card-text{
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+    background: rgba(0, 0, 0,0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    opacity: 0;
+    transition: 0.6s;
+
+} */
+
+.card-text{
+   
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0,0.9);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    opacity: 0;
+    transition: 0.6s;
+    margin-top: -600px;
+    padding-top: 284px;
+    padding-bottom: 319px;
+   
+    
+    
+}
+
+.card-text:hover{
+    opacity: 1;
+
+}
+
+.card-text q1{
+    font-size: 45px;
+    color: white;
+    margin-bottom: 15px;
+}
+
+.card-text > *{
+    transform: translateY(20px);
+    transition: transform 0.6s;
+}
+
+.card-text:hover > *{
+    transform: translateY(0px);
+    color: white;
+    
+}
+
+
+
+
+
+
+
+
+</style>
+
+<body>
+    <header class="navbar">
+        <div class="left">
+            <nav>
+                <div class="toggle">
+                    <a class="portfolio" href="portfolio.html">Portfolio</a>
+                    <a class="home" href="index.html">Home</a>
+                    <a class="album" href="album.html">Albums</a>
+                    <a class="about" href="about.html">About</a>
+                    <a class="contact" href="contact.html">Contact</a>
+                    
+                </div>
+            </nav>
+        </div>
+
+        <!-- <div class="mid">
+            
+        </div> -->
+
+        <div class="right">
+            <a href="#"><img src="insta.png" class="insta"  style="width:55px; "  ></a>
+        </div>
+    </header>
+
+
+
+    <section>
+        
+        <div class="recent-work">
+            <p5>Recent Works</p5>
+        </div>
+
+        <div class="card-group">
+            <div class="card">
+                <img src="portrait.jpg" alt="portrait" class="portrait" width="100%" />
+                <div class="card-text">
+                    <q1>Portrait</q1>
+                </div>
+                   
+            </div>
+            <div class="card">
+                <img src="place.jpg" alt="place" class="place" width="100%" />
+                <div class="card-text">
+                    <q1>Place</q1>
+                </div>    
+            </div>
+            <div class="card">
+                <img src="fashion.jpg" alt="Fashion" class="Fashion" width="100%" />
+                <div class="card-text">
+                    <q1>Fashion</q1>
+                </div>   
+            </div>
+        </div>
+
+
+
+
+    </section>
+
+
+
+
+
+
+
+
+
+
+    <!-- <h3>
+        Copyright@ZeeStudio
+    </h3> -->
+</body>
+
+</html>
